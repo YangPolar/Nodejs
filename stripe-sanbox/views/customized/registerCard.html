@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <meta charset="utf-8" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <title>Accept a payment method</title>
+</head>
+<body>
+<script>
+    const response = fetch('http://localhost:3000/get_client_secret?customer_id=cus_ML4iIaesP7xqI7')
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data)
+            });
+    //const {client_secret: clientSecret} = response.json();
+    const client_secret = "seti_1LcSiqLePnA9FeujOriGqAKg_secret_ML90i8AHKrlrzsoSwibkR5FZ1k0Vmio";
+    alert("c: " + client_secret);
+    document.write('<form id="payment-form" data-secret="' + client_secret + '">' +
+        '<div id="payment-element"></div>' +
+        '<button id="submit">Submit</button>' +
+        '</form>');
+</script>
+<form id="payment-form" data-secret="seti_1LcSiqLePnA9FeujOriGqAKg_secret_ML90i8AHKrlrzsoSwibkR5FZ1k0Vmio">
+    <div id="payment-element">
+        <!-- Elements will create form elements here -->
+    </div>
+
+    <button id="submit">Submit</button>
+</form>
+</body>
+</html>
