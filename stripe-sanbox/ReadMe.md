@@ -2,10 +2,14 @@
 Developer DOC
 https://stripe.com/docs
   - https://stripe.com/docs/payments/checkout/how-checkout-works
-  - https://stripe.com/docs/payments/card-element
+  - https://stripe.com/docs/payments/card-element]
+  
+
 API DOD
   - https://stripe.com/docs/api
   - https://stripe.com/docs/api/tokens
+  
+
 Stripe JS
   - https://stripe.com/docs/js/
   
